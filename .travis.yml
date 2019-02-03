@@ -9,11 +9,9 @@ install:
   -o dropbox_uploader.sh
 - chmod +x dropbox_uploader.sh
 script:
+- cd source
 - mkdir _build
-- cd ./styles
-- ls
-- cd ../source
-- pandoc manuscript.md -F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc -o ../_build/manuscript.pdf
+- pandoc manuscript.md -F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc -o _build/manuscript.pdf
 deploy:
   provider: releases
   api_key:
@@ -21,5 +19,3 @@ deploy:
   file: _build/manuscript.pdf
   skipe_cleanup: true
   draft: true
-  on:
-    repo: mitchellmcm27/pandoc-manuscript-starter
