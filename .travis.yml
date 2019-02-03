@@ -11,11 +11,11 @@ install:
   - chmod +x dropbox_uploader.sh
 script:
   - mkdir _build
-  - pandoc manuscript.md --filter pandoc-citeproc -o _build/manuscript.pdf
+  - pandoc manuscript.md --filter pandoc-eqnos --filter pandoc-fignos --filter pandoc-citeproc -o _build/manuscript.pdf
 deploy:
   provider: releases
   api_key:
-    secure: [API KEY]
+    secure: "GITHUB OAUTH TOKEN"
   file: "_build/manuscript.pdf"
   skip_cleanup: true
   on:

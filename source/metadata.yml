@@ -1,6 +1,9 @@
 ---
-title: "Lithosphere removal in the Puna Plateau"
-author: Mitchell McMillan
+title: "Pandoc manuscript starter kit"
+author:
+- Author One
+- Author Two
+
 date: \today{}
 
 fontsize: 12pt
@@ -10,7 +13,7 @@ header-includes:
 - \usepackage{setspace}
 - \doublespacing
 - \usepackage{fancyhdr}
-- \fancyhead[RO, RE]{McMillan \thepage}
+- \fancyhead[RO, RE]{Fancy Header \thepage}
 - \cfoot{}
 - \pagestyle{fancy}
 - \renewcommand{\headrulewidth}{0pt}
@@ -18,19 +21,5 @@ header-includes:
 - \raggedright
 
 bibliography: library.bib
-csl: geology.csl
+csl: "../styles/american-geophysical-union.csl"
 ---
-
-
-# Introduction
-
-Test citation @Beall2017
-
-# Methods
-
-# Implications and Discussion
-
-# Timetable
-
-# References
-
