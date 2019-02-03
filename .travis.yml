@@ -22,5 +22,4 @@ deploy:
     secure: "GITHUB OAUTH TOKEN"
   file: "_build/manuscript.pdf"
   skip_cleanup: true
-  on:
-    tags: true
+  draft: true
