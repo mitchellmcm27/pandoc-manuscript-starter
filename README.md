@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mitchellmcm27/pandoc-manuscript-starter.svg?branch=master)](https://travis-ci.com/mitchellmcm27/pandoc-manuscript-starter)
+
 This is a starter kit for writing manuscripts in Markdown using Pandoc. Any text editor can be used to generate manuscripts, but a VS Code workspace is provided here.
 This setup splits the process of creating a manuscript into two tasks:
 
