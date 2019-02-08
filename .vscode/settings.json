@@ -1,0 +1,5 @@
+{
+    "pandoc.pdfOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc",
+    "pandoc.htmlOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc",
+    "pandoc.docxOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc"
+}
