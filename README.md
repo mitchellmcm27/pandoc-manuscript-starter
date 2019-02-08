@@ -36,3 +36,12 @@ Thousands of bibliography and citation styles are provided in the `styles` folde
 ## Automatic builds with Travis
 
 To trigger a build, setup a Travis account and link the repository to Travis. Builds will be triggered on new commits, according to the setup in `.travis.yml`. A default setup is provided that makes sure all dependencies are available for generating pdfs. This builds a pdf file, but you need to save it somehow. One option is to upload the pdf to Github Releases on a successful build. To do this, first run `travis setup releases` in the repository. Replace the provided encrypted API key in `.travis.yml` with the one generated. Push a new commit to trigger a release, and look for the pdf as a draft release in your repository.
+
+## Step by step
+
+1. Fork this repository
+2. Edit manuscript
+3. Push your edits
+4. Get pdf
+
+Based on my [PhD thesis proposal](https://github.com/mitchellmcm27/phd-thesis-proposal)
