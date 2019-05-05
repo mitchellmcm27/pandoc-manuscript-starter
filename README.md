@@ -1,9 +1,7 @@
 [![Build Status](https://travis-ci.com/mitchellmcm27/pandoc-manuscript-starter.svg?branch=master)](https://travis-ci.com/mitchellmcm27/pandoc-manuscript-starter)
 
 ```sh
-git clone https://github.com/mitchellmcm27/pandoc-manuscript-start your-paper-title
-cd your-paper-title
-git pull --recurse-submodules
+git clone --recurse-submodules https://github.com/mitchellmcm27/pandoc-manuscript-start your-paper-title
 ```
 
 This is a starter kit for writing manuscripts in Markdown using Pandoc. Any text editor can be used to generate manuscripts, but a VS Code workspace is provided here.
