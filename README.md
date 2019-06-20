@@ -11,18 +11,18 @@ For **writing**, we provide
 * A bare-bones directory for organizing your manuscript files (see the `source` folder),
 * The ability to write text fully in Markdown,
 * Bibliography integration with BibTeX,
-* Reference autocomplete,
-* Thousands of pre-defined citation styles from CSL (see below)
+* Reference autocomplete (VS Code package `Pandoc Citer`),
+* Thousands of pre-defined citation styles from CSL (`styles` submodule, see below)
 
 For generating the final manuscript file (**building**)
 * High quality output in pdf (or docx, or others) with Pandoc,
-* Build locally with VS Code,
-* Automatically build pdfs and upload them to GitHub Releases (see below), or
+* Build locally with VS Code and the `vscode-pandoc` package,
+* Automatically build pdfs, uploaded to GitHub Releases (see below), or
 * Extend the project in any number of ways to integrate the build system of your choice.
 
-Note that you can build pdfs from Markdown using LaTeX and pandoc on your computer, but this requires both to be installed and set up properly (along with any other packages or pandoc filters). Getting the right variables on your PATH can be a hassle, and a LaTeX distribution (with packages) can take up significant hard disk space. Additionally, it's nice to be able to write in Markdown anywhere, from any machine. This is why the automatic builds with Travis are beneficial.
+Note that you can build pdfs from Markdown using LaTeX and pandoc on your computer, but this requires both to be installed and set up properly (along with any other packages or pandoc filters). Getting the right variables on your PATH can be a hassle, and a LaTeX distribution (with packages) can take up significant hard disk space. Additionally, it's nice to be able to write in Markdown anywhere, from any machine, even in the browser, with pdf and docx generated on commits. This is why the automatic builds with Travis are nice.
 
-The included VS Code workspace settings assume you have LaTeX, pandoc, pandoc-citeproc, pandoc-fignos, and pandoc-eqnos installed and set up, but this can be modified easily (see `.vscode/settings.json`).
+The included VS Code workspace settings assume you have LaTeX, pandoc, pandoc-citeproc, pandoc-fignos, and pandoc-eqnos installed and set up, but this can be modified (see `.vscode/settings.json`).
 
 ## Essential VS Code packages
 
@@ -41,7 +41,7 @@ Thousands of bibliography and citation styles are provided in the `styles` folde
 
 ## Automatic builds with Travis
 
-To trigger a build, setup a Travis account and link the repository to Travis. Builds will be triggered on new commits, according to the setup in `.travis.yml`. A default setup is provided that makes sure all dependencies are available for generating pdfs. This builds a pdf file, but you need to save it somehow. One option is to upload the pdf to Github Releases on a successful build. To do this, first run `travis setup releases` in the repository. Replace the provided encrypted API key in `.travis.yml` with the one generated. Push a new commit to trigger a release, and look for the pdf as a draft release in your repository.
+To trigger a build, setup a Travis account and link the forked repository to Travis. Builds will be triggered on new commits, according to the setup in `.travis.yml`. A default setup is provided that makes sure basic dependencies are available for generating pdfs. This step builds a pdf file, but you need to save it somehow. One option is to upload the pdf to Github Releases on a successful build. To do this, first run `travis setup releases` in the repository. Replace the provided encrypted API key in `.travis.yml` with the one generated. Push a new commit to trigger a release, and look for the pdf as a draft release in your repository. Another option is to upload the generated pdf to Dropbox [e.g. like this](https://labs.consol.de/travis/dropbox/2015/11/04/upload-travis-artifacts-to-dropbox.html).
 
 ## Step by step
 
