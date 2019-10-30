@@ -30,6 +30,8 @@ The included VS Code workspace settings assume you have LaTeX, pandoc, pandoc-ci
 * [Pandoc Citer](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter) - autocomplete for Markdown references (eg @McMillan2017)
 * [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) - kb shortcuts, autocomplete, clickable links, etc.
 
+These are recommended in the VS Code workspace settings.
+
 ## Other VS Code packages
 
 * [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) - in case you need to drop down into LaTeX syntax
