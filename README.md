@@ -51,5 +51,3 @@ To trigger a build, setup a Travis account and link the forked repository to Tra
 2. Edit manuscript
 3. Push your edits
 4. Get pdf
-
-Based on my [PhD thesis proposal](https://github.com/mitchellmcm27/phd-thesis-proposal)
