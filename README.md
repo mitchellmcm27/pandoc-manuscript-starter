@@ -1,26 +1,27 @@
 ```sh
-git clone --recurse-submodules https://github.com/mitchellmcm27/pandoc-manuscript-starter your-paper
+git clone https://github.com/mitchellmcm27/pandoc-manuscript-starter your-paper
 ```
 
 This is a starter kit for writing manuscripts in Markdown using Pandoc. Any text editor can be used to generate manuscripts, but a VS Code workspace is provided here.
 This setup splits the process of creating a manuscript into two tasks:
 
 For **writing**, we provide
-* A bare-bones directory for organizing your manuscript files (see the `source` folder),
-* The ability to write text fully in Markdown,
-* Bibliography integration with BibTeX,
-* Reference autocomplete (VS Code package `Pandoc Citer`),
-* Thousands of pre-defined citation styles from CSL (`styles` submodule, see below)
+* A flat directory for organizing your manuscript files. All author content is placed in the root directory, while supplementary files are in subfolders.
+* The ability to write text fully in Markdown, which is simpler to read and write than LaTeX.
+* Bibliography integration with BibTeX, automating reference citation and formatting.
+* Citation autocomplete (VS Code package `Pandoc Citer`).
+* The ability to customize the formatting of the bibliography, by copying a .csl file into the `styles` folder.
 
 For generating the final manuscript file (**building**)
-* High quality output in pdf (or docx, or others) with Pandoc,
-* Build locally with VS Code and the `vscode-pandoc` package,
-* Automatically build pdfs, uploaded to GitHub Releases (see below), or
-* Extend the project in any number of ways to integrate the build system of your choice.
+* High quality output in pdf (or docx, or others) with Pandoc.
+* Build locally with VS Code and the `vscode-pandoc` package (requires installing Pandoc, LaTeX, and any other dependencies on your machine).
+* Automatically build pdfs using Github Actions (see below).
+
+Extend the project in any number of ways to integrate the build system of your choice.
 
 Note that you can build pdfs from Markdown using LaTeX and pandoc on your computer, but this requires both to be installed and set up properly (along with any other packages or pandoc filters). Getting the right variables on your PATH can be a hassle, and a LaTeX distribution (with packages) can take up significant hard disk space. Additionally, it's nice to be able to write in Markdown anywhere, from any machine, even in the browser, with pdf and docx generated on commits. This is why the automatic builds with Travis are nice.
 
-The included VS Code workspace settings assume you have LaTeX, pandoc, pandoc-citeproc, pandoc-fignos, and pandoc-eqnos installed and set up, but this can be modified (see `.vscode/settings.json`).
+The included VS Code workspace settings assume you have LaTeX, pandoc, and pandoc-crossref installed and set up, but this can be modified (see `.vscode/settings.json`).
 
 ## Essential VS Code packages
 
@@ -37,11 +38,11 @@ These are recommended in the VS Code workspace settings.
 
 ## Automatic citation styles and reference formatting
 
-Thousands of bibliography and citation styles are provided in the `styles` folder (as .csl files). This folder is a clone of the [official Citation Style Language repository](https://github.com/citation-style-language/styles). To change the style, update the `csl` field in the YAML header of the manuscript. Note that many of the styles live in the `dependent` directory, for example, `"../styles/dependent/pnas.csl"`.
+Thousands of bibliography and citation styles are publicly available as .csl files. Changing the style involves downloaing one of these into the `styles` folder and changing the `--csl` pandoc argument (or updating the `csl` field in the YAML header of the document) to this new file. CSL files can be found at the [official Citation Style Language repository](https://github.com/citation-style-language/styles).
 
 ## Automatic builds with Github actions
 
-See `.github/workflows/main.yml`
+If you fork this repository, Github will take care of generating a pdf from the `manuscript.md` file whenever you push changes to any branch. See the `.github/workflows/main.yml` file and customize it as needed.
 
 ## Step by step
 
