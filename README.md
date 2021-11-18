@@ -39,9 +39,9 @@ These are recommended in the VS Code workspace settings.
 
 Thousands of bibliography and citation styles are provided in the `styles` folder (as .csl files). This folder is a clone of the [official Citation Style Language repository](https://github.com/citation-style-language/styles). To change the style, update the `csl` field in the YAML header of the manuscript. Note that many of the styles live in the `dependent` directory, for example, `"../styles/dependent/pnas.csl"`.
 
-## Automatic builds with Travis
+## Automatic builds with Github actions
 
-To trigger a build, setup a Travis account and link the forked repository to Travis. Builds will be triggered on new commits, according to the setup in `.travis.yml`. A default setup is provided that makes sure basic dependencies are available for generating pdfs. This step builds a pdf file, but you need to save it somehow. One option is to upload the pdf to Github Releases on a successful build. To do this, first run `travis setup releases` in the repository. Replace the provided encrypted API key in `.travis.yml` with the one generated. Push a new commit to trigger a release, and look for the pdf as a draft release in your repository. Another option is to upload the generated pdf to Dropbox [e.g. like this](https://labs.consol.de/travis/dropbox/2015/11/04/upload-travis-artifacts-to-dropbox.html).
+See `.github/workflows/main.yml`
 
 ## Step by step
 

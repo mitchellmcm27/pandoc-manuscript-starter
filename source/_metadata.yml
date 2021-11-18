@@ -10,8 +10,6 @@ author:
 
 date: \today{}
 
-bibliography: library.bib
-
 # customize figure and table citations
 # default is fig. X or (Fig. X at beginning of sentence)
 cref: true
