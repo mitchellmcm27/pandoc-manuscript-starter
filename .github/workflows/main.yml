@@ -16,12 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: |
-          mkdir output
-      - run: |
           tlmgr install cleveref siunitx
       - run: |
-          pandoc --standalone --output=output/manuscript.pdf source/manuscript.md source/_metadata.yml --lua-filter=./filters/include-files.lua  -F pandoc-crossref --citeproc --lua-filter=./filters/scholarly-metadata.lua --lua-filter=./filters/author-info-blocks.lua --lua-filter=./filters/pagebreak.lua --csl=styles/american-geophysical-union.csl --bibliography=source/library.bib
+          pandoc --standalone --output=manuscript.pdf source/manuscript.md source/_metadata.yml --lua-filter=./filters/include-files.lua  -F pandoc-crossref --citeproc --lua-filter=./filters/scholarly-metadata.lua --lua-filter=./filters/author-info-blocks.lua --lua-filter=./filters/pagebreak.lua --csl=styles/american-geophysical-union.csl --bibliography=source/library.bib
       - uses: actions/upload-artifact@master
         with:
-          name: output
-          path: output
+          name: manuscript.pdf
+          path: output/manuscript.pdf
