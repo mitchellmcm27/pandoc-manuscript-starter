@@ -9,19 +9,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  pull:
     runs-on: ubuntu-latest
+    container: 
+      image: pandoc/latex:2.16.1
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: recursive
       - run: |
           mkdir output
-      - uses: docker://pandoc/latex:2.16.1
-        with:
-          args: >- # allows you to break string into multiple lines
+      - run: |
+          tlmgr install cleveref
+      - run: |
+          pandoc
             --standalone
-            --output=manuscript.pdf
+            --output=output/manuscript.pdf
             source/manuscript.md
             source/_metadata.yml
             --lua-filter=./filters/include-files.lua 
