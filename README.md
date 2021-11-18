@@ -1,5 +1,3 @@
-[![Build Status](https://app.travis-ci.com/mitchellmcm27/pandoc-manuscript-starter.svg?branch=master&status=passing)](https://app.travis-ci.com/mitchellmcm27/pandoc-manuscript-starter)
-
 ```sh
 git clone --recurse-submodules https://github.com/mitchellmcm27/pandoc-manuscript-starter your-paper
 ```
