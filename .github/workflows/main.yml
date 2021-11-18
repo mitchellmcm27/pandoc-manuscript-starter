@@ -30,6 +30,7 @@ jobs:
             --lua-filter=./filters/scholarly-metadata.lua 
             --lua-filter=./filters/author-info-blocks.lua 
             --lua-filter=./filters/pagebreak.lua
+            --csl styles/american-geophysical-union.csl
       - uses: actions/upload-artifact@master
         with:
           name: output
