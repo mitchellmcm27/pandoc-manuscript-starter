@@ -1,7 +1,7 @@
 {
-    "pandoc.pdfOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc",
-    "pandoc.htmlOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc",
-    "pandoc.docxOptString": "-F pandoc-eqnos -F pandoc-fignos -F pandoc-citeproc",
+    "pandoc.pdfOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
+    "pandoc.htmlOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
+    "pandoc.docxOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
     "editor.wordWrap": "on",
     "editor.formatOnSave": false,
     "[markdown]": {
