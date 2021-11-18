@@ -1,0 +1,46 @@
+---
+title: "Pandoc manuscript starter kit"
+institute:
+  - uXyz: Department of X, University of Y, Address Z
+author:
+  - Author NumberOne:
+      institute: [uXyz]
+  - Author NumberTwo:
+      institute: [uXyz]
+
+date: \today{}
+
+# customize figure and table citations
+# default is fig. X or (Fig. X at beginning of sentence)
+cref: true
+colorlinks: true
+linkReferences: true
+nameInLink: true
+figPrefix:
+  - "Fig."
+  - "Figs."
+tblPrefix:
+  - "Table"
+  - "Tables"
+eqnPrefix:
+  - "Eq."
+  - "Eqs."
+
+geometry: margin=1in
+header-includes:
+  - \usepackage{setspace}
+  - \doublespacing
+  - \usepackage{lineno}
+  - \linenumbers
+  - \usepackage{cleveref}
+  - \usepackage{pdflscape}
+  - \newcommand{\blscape}{\begin{landscape}}
+  - \newcommand{\elscape}{\end{landscape}}
+  - \usepackage{caption}
+  - \usepackage{booktabs}
+  - \usepackage{siunitx}
+  - \sisetup{range-phrase=--}
+  - \sisetup{range-units=single}
+
+---
+

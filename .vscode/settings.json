@@ -1,16 +1,16 @@
 {
-    "pandoc.pdfOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
-    "pandoc.htmlOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
-    "pandoc.docxOptString": "_metadata.yml --lua-filter=../filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=../filters/scholarly-metadata.lua --lua-filter=../filters/author-info-blocks.lua --lua-filter ../filters/pagebreak.lua",
-    "editor.wordWrap": "on",
-    "editor.formatOnSave": false,
-    "[markdown]": {
-        "editor.formatOnSave": true
-    },
-    "[json]": {
-        "editor.formatOnSave": true
-    },
-    "[jsonc]": {
-        "editor.formatOnSave": true
-    }
+  "pandoc.pdfOptString": "_metadata.yml --lua-filter=filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=filters/scholarly-metadata.lua --lua-filter=filters/author-info-blocks.lua --lua-filter filters/pagebreak.lua",
+  "pandoc.htmlOptString": "_metadata.yml --lua-filter=filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=filters/scholarly-metadata.lua --lua-filter=filters/author-info-blocks.lua --lua-filter filters/pagebreak.lua",
+  "pandoc.docxOptString": "_metadata.yml --lua-filter=filters/include-files.lua -F pandoc-crossref --citeproc --lua-filter=filters/scholarly-metadata.lua --lua-filter=filters/author-info-blocks.lua --lua-filter filters/pagebreak.lua",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": false,
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.formatOnSave": true
+  }
 }
