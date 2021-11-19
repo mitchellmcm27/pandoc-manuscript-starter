@@ -44,14 +44,7 @@ Thousands of bibliography and citation styles are publicly available as .csl fil
 
 If you fork this repository, Github will take care of generating a pdf from the `manuscript.md` file whenever you push changes to any branch. See the `.github/workflows/main.yml` file and customize it as needed.
 
-## Step by step
-
-1. Fork/clone this repository
-2. Edit manuscript
-3. Push your edits
-4. Get pdf
-
-## Using GitHub's built-in VS Code environment
+## Use GitHub's Codespaces as a text editor
 
 You can edit the manuscript, save changes, and automatically generate a pdf, all within your web browser using GitHub's Codepsaces.
 In your GitHub repository, press the `.` key or swap `.com` with `.dev` in the URL to go directly to a VS Code environment in your browser.
