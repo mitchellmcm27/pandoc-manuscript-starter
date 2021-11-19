@@ -50,3 +50,11 @@ If you fork this repository, Github will take care of generating a pdf from the 
 2. Edit manuscript
 3. Push your edits
 4. Get pdf
+
+## Using GitHub's built-in VS Code environment
+
+You can edit the manuscript, save changes, and automatically generate a pdf, all within your web browser using GitHub's Codepsaces.
+In your GitHub repository, press the `.` key or swap `.com` with `.dev` in the URL to go directly to a VS Code environment in your browser.
+Edit the `manuscript.md` file, or any other file, to your liking.
+Push the changes to GitHub, and come back to the Actions tab to view the generated pdf.
+
